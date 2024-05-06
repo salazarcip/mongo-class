@@ -1,0 +1,13 @@
+use("platzi_store")
+
+db.inventario.drop()
+
+db.inventario.insertMany([
+{_id: 1, item: { name:"item ab", code: "123", description: "single line."}, qty: 15, tags:["shool", "book", "bag", "headphone", "appliance"],},
+{_id: 2, item: { name:"item cd", code: "457", description: "first line."}, qty: 20, tags:["shool", "book", "appliance"]},
+{_id: 3, item: { name:"item ef", code: "789", description: "second line."}, qty: 55, tags:["shool", "book"]},
+{_id: 4, item: { name:"item gh", code: "1011", description: "three line."}, qty: 30, tags:["electronics", "shool"]},
+{_id: 5, item: { name:"item ij", code: "000"}, qty: 20, tags:["appliance school"]},
+
+])
+db.inventario.find()
