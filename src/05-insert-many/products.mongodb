@@ -1,0 +1,26 @@
+use("platzi_store")
+
+db.products.drop()
+
+db.products.insertMany([
+{
+    _id: 1,
+    name: "TV33",
+    price: 1000,
+    category: "Electronics"
+},
+{
+    _id: 2,
+    name: "TV43",
+    price: 1000,
+    category: "Electronics"  
+},
+{
+    _id: 3,
+    name: "TV34",
+    price: 1000,
+    category: "Electronics"  
+}
+])
+
+db.products.find()

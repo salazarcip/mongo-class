@@ -1,0 +1,14 @@
+use("platzi_store")
+
+
+db.products.insertOne({
+    name: "TV Samsung 43",
+    price:"1000",
+    description: "43 pulgadas, 4k, Smart TV, Full HD"
+})
+
+db.products.insertOne({
+    name: "TV Samsung 46",
+    price:"1600",
+    description: "436pulgadas, 4k, Smart TV, Full HD"
+})
