@@ -20,6 +20,11 @@ db.products.insertMany([
     name: "TV34",
     price: 1000,
     category: "Electronics"  
+},
+{
+    name: "TV84",
+    price: 1000,
+    category: "Electronics"  
 }
 ], {
     ordered:false //ayuda a que siga cargando los datos asi consiga un ID dulicado, igual indicara el error pero seguida guardando datos
