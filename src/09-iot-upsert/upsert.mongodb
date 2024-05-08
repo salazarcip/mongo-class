@@ -1,0 +1,13 @@
+use("platzi_store")
+
+//Use Upsert para crear o actualizar un registro.
+db.iot.updateOne({
+    sensor: "A001",
+    date: "2022-01-05",
+}, {
+    $push: {
+        readings: 124345
+    }
+},{
+    upsert: true 
+})

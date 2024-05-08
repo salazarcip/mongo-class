@@ -1,0 +1,8 @@
+use("sample_training")
+
+db.companies.find({
+    "relationships.person.first_name": "Mark"
+  }, {
+    name: 1,
+    relationships: 1,
+  }).count() // 523

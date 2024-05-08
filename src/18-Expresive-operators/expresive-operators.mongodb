@@ -1,0 +1,15 @@
+use ("sample_training")
+
+ db.monthlyBudget.find({ spent: {$gte: 100}})
+
+db.monthlyBudget.find({
+    $expr: {
+        $gte:["$spent", 100]
+        }
+})  
+
+db.monthlyBudget.find({
+    $expr: {
+        $gte:["$spent", "$budget"] // Devualve cuales spent superan al budget
+        }
+})  

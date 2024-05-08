@@ -1,0 +1,20 @@
+use("platzi_store")
+
+// Using $eq
+
+// usando equal implicitamente
+db.inventory.find({qty: 20})
+
+// usando equal explicitamente
+db.inventory.find({qty: {$eq: 20}})
+
+// usando find en objetos anindados
+//NOTA: siempre que esté la notación . (punto), la clave debe ir en "" (comnnillas)
+db.inventory.find({"item.code": {$eq: 20}})
+
+db.inventory.find({"item.name": "ab"})
+
+// usando no equal, este se usa de forma explícita
+db.inventory.find({qty: {$ne: 20}})
+
+
